@@ -42,7 +42,7 @@
             <div class="row">
                 <div class="col mt-4 justify-content-start align-items-center">
                     <i class="bi bi-cash-coin color-primary icon-detail"></i>
-                    <span class="fs-2">R$0,00</span>
+                    <span class="fs-2" id="total">R$0,00</span>
                 </div>
                 <div class="col d-flex mt-4 justify-content-end">
                     <div class="text-center" >
@@ -66,20 +66,16 @@
                         </div>
                         <div class="row">
                             <div class="col-6">
-                                <div class="container">
-                                    <div class="row">
-                                        R$ 1000.00
-                                    </div>
+                                <div class="container p-0" id="cash-in-list">
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="container">                                    
-                                    R$ 500.00
+                                <div class="container p-0" id="cash-out-list">  
                                 </div>
                             </div>
                         </div>
                         <div class="col-12">
-                            <button type="button" class="btn button-default">Ver todas</button>
+                            <button type="button" class="btn button-default" id="verTodas">Ver todas</button>
                         </div>
                     </dic>
                 </div>
@@ -100,7 +96,7 @@
                     <div class="modal-body">
                             <div class="mb-3">
                                 <label for="value-input" class="form-label">Valor</label>
-                                <input type="number" class="form-control" id="value-input" aria-describedby="emailHelp" required>
+                                <input type="number" step="any" class="form-control" id="value-input" aria-describedby="emailHelp" required>
                             </div>
                             <div class="mb-3">
                                 <label for="description-input" class="form-label">Descrição</label>
@@ -116,7 +112,7 @@
                                     <label class="form-check-label" for="inlineRadio1">Entrada</label>
                                   </div>
                                   <div class="form-check form-check-inline">
-                                    <input class="form-check-input logout" type="radio" name="type-input" id="inlineRadio2" value="2">
+                                    <input class="form-check-input" type="radio" name="type-input" id="inlineRadio2" value="2">
                                     <label class="form-check-label" for="inlineRadio2">Saída</label>
                                   </div>
                             </div>
